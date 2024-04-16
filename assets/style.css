@@ -1,0 +1,3170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px !important;
+}
+
+@font-face {
+    font-family: 'go-b';
+    src: url(./fonts/Gobold-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'go-l';
+    src: url(./fonts/Gobold-Light.ttf);
+}
+
+@font-face {
+    font-family: 'go-r';
+    src: url(./fonts/Gobold-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'mont-b';
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'mont-l';
+    src: url(./fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'mont-r';
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-l';
+    src: url(../assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-r';
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-m';
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-sb';
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-b';
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-l';
+    src: url(./fonts/Agatho_\ Light.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-l-caps';
+    src: url(./fonts/Agatho_\ LightCAPS.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-b';
+    src: url(./fonts/Agatho_\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-b-caps';
+    src: url(./fonts/Agatho_\ BoldCAPS.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-r';
+    src: url(./fonts/Agatho_Regular.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-r-caps';
+    src: url(./fonts/Agatho_\ RegularCAPS.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-m';
+    src: url(./fonts/Agatho_\ Medium.ttf);
+}
+
+@font-face {
+    font-family: 'agatho-n';
+    src: url(./fonts/Agatho_\ Narrow.ttf);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul#primary-navigation {
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Mobile Navbar Start */
+
+.logo {
+    width: 14%;
+    padding: 8px;
+}
+
+nav.nav-dekstop {
+    width: 87%;
+    padding-top: 5px;
+}
+
+nav.nav-dekstop .part-3 {
+    width: 90%;
+}
+
+.search-bar form input[type="text"] {
+    float: left;
+}
+
+.nav-mobile,
+.mobile-pages {
+    display: none;
+}
+
+nav ul li a {
+    color: #FFF;
+    font-family: 'poppins-m';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 20px;
+    /* transition: color 0.3s; */
+    transition: border 0s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.mobile-pages ul li a {
+    color: #FFF;
+    font-family: 'poppins-b';
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 25px;
+    transition: all 0.3s;
+}
+
+.mobile-pages ul li a:hover {
+    color: #939393;
+}
+
+.active {
+    position: fixed;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+    z-index: 4;
+}
+
+.mobile {
+    display: none;
+}
+
+nav.nav-dekstop .row .col-lg-8.col-md-8 {
+    margin-top: auto;
+}
+
+.part-3 .social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.part-3 .social-icons a i {
+    margin: 0 4px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.part-3 .social-icons {
+    margin-bottom: 6px;
+}
+
+/* Mobile Nav bar End */
+
+/* Dekstop Nav bar Start */
+
+nav.nav-dekstop {
+    border-bottom: 2px solid #0000;
+    border-image: linear-gradient(to right, #fff 10%, #000 60%);
+    border-image-slice: 1;
+}
+
+.search-bar form input[type="text"] {
+    width: 88%;
+    background-color: transparent;
+    border: 0px;
+    padding: 6px 10px;
+    font-family: 'poppins';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    color: #CCCCCC;
+}
+
+.search-bar form input[type="text"]:focus-visible {
+    outline: 0px;
+}
+
+.search-bar form .search-icon {
+    width: 12%;
+    background-color: transparent;
+    padding: 6px 10px;
+    color: #fff;
+}
+
+.search-bar {
+    margin-bottom: 5px;
+    border: 3px solid #B3B3B3;
+}
+
+ul#primary-navigation {
+    margin-bottom: 0px;
+}
+
+.social-icons a i::before {
+    color: #000;
+}
+
+nav.nav-dekstop {
+    margin-top: -25px;
+}
+
+.part-3 .social-icons a i {
+    height: 24px;
+    width: 24px;
+    font-size: 12px;
+}
+
+
+/* Dekstop Nav bar End */
+
+/* Home Header Start */
+
+#home-header {
+    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(./images/1x/1x/home-header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.home-header-part-1 {
+    text-align: center;
+}
+
+.home-header-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.home-header-part-1 a button,
+section#contact-header .contact-header-part-2 form button, .team-part-3 button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.home-header-part-1 a button:hover,
+section#contact-header .contact-header-part-2 form button:hover, .team-part-3 button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.car-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.home-header-part-2 .car-1 {
+    width: 100%;
+    height: 300px;
+}
+
+.home-header-part-1 {
+    margin-bottom: 5.5%;
+}
+
+.home-header-part-2 {
+    margin-bottom: -5.5%;
+}
+
+
+/* Home Header End */
+
+
+/* Vehicles Section Start */
+
+
+section#vehicles {
+    margin: 5% 0 5% 0;
+}
+
+ul.logos li {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin: 10px 15px;
+}
+
+ul.logos li img {
+    object-fit: contain;
+}
+
+.vehicles-part-1 {
+    text-align: center;
+}
+
+.vehicles-part-1 h1,
+.vehicles-part-1 p,
+.vehicles-part-1 a button,
+.vehicles-part-1 ul {
+    margin: 20px 0;
+}
+
+.vehicles-part-1 a button,
+.luxury-part-1 a button {
+    background-color: transparent;
+    border: 3px solid #000;
+    color: #000;
+    font-family: 'poppins-sb';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.vehicles-part-1 a button:hover,
+.luxury-part-1 a button:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.vehicles-part-1 h1 {
+    color: #000;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.vehicles-part-1 p {
+    color: #000;
+    font-family: 'poppins-m';
+    font-size: 22px;
+    padding: 0 10%;
+}
+
+.vehicles-part-1 p {
+    margin-bottom: 4%;
+}
+
+.vehicles-part-1 a button {
+    margin-top: 4%;
+}
+
+/* Vehicles Section End */
+
+
+/* Exotic Section Start */
+
+section#exotic {
+    margin: 0 0 5% 0;
+}
+
+.exotic-part-1 h1 {
+    color: #000;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.exotic-part-1 {
+    text-align: center;
+}
+
+.exotic-part-1 a button {
+    background-color: transparent;
+    border: 3px solid #000;
+    color: #000;
+    font-family: 'poppins-sb';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.exotic-part-1 a button:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+ul.cards li {
+    margin: 3% 10px;
+    display: inline-block;
+}
+
+ul.cards li .card {
+    width: 280px;
+}
+
+.card .content {
+    background-color: #000;
+    padding: 5%;
+    color: #fff;
+}
+
+.card .content h2 {
+    font-family: 'poppins-m';
+    font-size: 22px;
+}
+
+.card .content h5 {
+    font-family: 'poppins-l';
+    font-size: 15px;
+}
+
+.card .content a button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    transition: all ease-in-out 0.3s;
+    margin: 3% 0;
+}
+
+.card .content a button:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Exotic Section End */
+
+/* Luxury Section Start */
+
+.luxury-part-1 h1 {
+    color: #000;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.jet .luxury-part-1 .black .frame h1 {
+    color: #000;
+}
+
+.luxury-part-1 {
+    text-align: center;
+}
+
+section#luxury .container .row .col-lg-12.col-md-12 {
+    padding: 0;
+}
+
+section#luxury .container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.black {
+    background-color: #000;
+    margin-top: 3%;
+    padding: 7% 0;
+    border-top: 50px solid #000;
+}
+
+.jet .black {
+    background-color: #fff;
+    margin-top: 3%;
+    padding: 7% 0;
+    border-top: none;
+}
+
+.black .frame h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 50px;
+}
+
+.black .frame p {
+    color: #fff;
+    font-family: 'poppins-l';
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+.luxury-part-1 .black .frame {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.jet .luxury-part-1 .black .frame {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.luxury-part-1 .black {
+    background: url(./images/1x/1x/frame.png), linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+}
+
+.jet .luxury-part-1 .black {
+    background: url(./images/1x/1x/frame.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+}
+
+.luxury-part-1 .car {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -10%;
+}
+
+.black .frame {
+    margin-bottom: 4% !important;
+    margin-top: -2% !important;
+}
+
+/* Luxury Section End */
+
+/* Los-Angeles Section Start */
+
+section#los-angeles {
+    margin: 5% 0;
+    padding: 4% 0;
+}
+
+.los-angeles-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.los-angeles-part-1 h2 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 40px;
+}
+
+.los-angeles-part-1 {
+    text-align: center;
+}
+
+.los-angeles-part-1 a button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.los-angeles-part-1 a button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+section#los-angeles {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/1x/1x/los-angeles-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.los-angeles-part-1 .map {
+    width: 40%;
+    margin: 25px auto;
+    height: 40%;
+}
+
+/* Los-Angeles Section End */
+
+/* Dream-Car Section Start */
+
+section#dream-car,
+section#dream-car-about {
+    margin: 5% 0;
+    padding: 5% 0;
+}
+
+.dream-car-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 70px;
+}
+
+.dream-car-part-1 p {
+    color: #fff;
+    font-family: 'poppins-l';
+    font-size: 15px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dream-car-part-1 p,
+.dream-car-part-1 h1,
+.dream-car-part-1 a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dream-car-part-1 {
+    text-align: center;
+}
+
+.dream-car-part-1 a button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.dream-car-part-1 a button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+section#dream-car {
+    background: url(./images/1x/1x/dream-car.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dream-Car Section End */
+
+/* Door Start */
+
+section#door {
+    margin: 5% 0;
+    padding: 0% 0;
+}
+
+section#door {
+    background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#door .container .row .circle {
+    background: url(./images/1x/1x/circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.door-part-2 {
+    text-align: center;
+}
+
+.door-part-2 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.door-part-2 p {
+    color: #fff;
+    font-family: 'poppins-l';
+    font-size: 15px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.door-part-2 p,
+.door-part-2 h1,
+.door-part-2 a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.door-part-2 a button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.door-part-2 a button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.door-part-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -16%;
+    margin-right: -16%;
+}
+
+/* Door End */
+
+/* Clients Start */
+
+.clients-part-1,
+.clients-part-3 {
+    text-align: center;
+}
+
+.clients-part-1 h1 {
+    color: #000;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.clients-part-3 a button {
+    background-color: transparent;
+    border: 3px solid #000;
+    color: #000;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.clients-part-3 a button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+section#clients {
+    margin: 8% 0 5% 0;
+    padding: 0% 0;
+}
+
+.clients-part-2 .review {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clients-part-2 .review .content {
+    text-align: center;
+}
+
+.review .girl-image {
+    height: 140px;
+    width: 140px;
+    margin-left: auto;
+}
+
+.review .car-image {
+    height: 200px;
+    width: 400px;
+    margin-right: auto;
+}
+
+.review .car-image img {
+    object-fit: contain;
+}
+
+.clients-part-2 .review {
+    border: 15px solid #000;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.review .girl-image {
+    margin-top: -9%;
+    margin-right: 3%;
+}
+
+.review .car-image {
+    margin-bottom: -10%;
+    margin-left: -8%;
+}
+
+.review .content h2 {
+    font-family: 'poppins-b';
+    font-size: 30px;
+    color: #000;
+}
+
+.review .content h6 {
+    font-family: 'poppins-r';
+    font-size: 14px;
+    color: #000;
+}
+
+.review .content h3 {
+    font-family: 'poppins-sb';
+    font-size: 40px;
+    color: #000;
+    text-align: left;
+    line-height: 0.1;
+}
+
+.review .content p {
+    font-family: 'poppins-m';
+    font-size: 15px;
+    font-style: italic;
+    color: #000;
+}
+
+.clients-part-2 .review .content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clients-part-2 {
+    display: flex;
+    align-items: center;
+}
+
+a.arrow-right,
+a.arrow-left {
+    margin: 0 6%;
+    font-size: 24px;
+}
+
+a.arrow-right:hover,
+a.arrow-left:hover {
+    cursor: pointer;
+}
+
+a.arrow-right i,
+a.arrow-left i {
+    background-color: #fff;
+}
+
+a.arrow-right i::before,
+a.arrow-left i::before {
+    color: #000;
+}
+
+
+
+/* Client End */
+
+/* Start Footer Section */
+
+.section-footer {
+    margin-top: 5%;
+    padding: 4% 0px 0.2% 0px;
+    background: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-logo {
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-paragraph {
+    color: #fff;
+    font-family: 'poppins';
+}
+
+.heading h5 {
+    color: #fff;
+    font-family: 'poppins-b';
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.list ul li {
+    margin: 7px 0px;
+}
+
+.list ul li a {
+    color: #fff;
+    font-family: 'poppins-r';
+    font-size: 15px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.list ul li a:hover {
+    font-family: 'poppins-sb';
+}
+
+.heading {
+    margin-top: 0%;
+}
+
+.list {
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#icon-media {
+    margin-right: 12px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.social-icon,
+.icon-list i {
+    margin-right: 7px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon a,
+.icon-list i {
+    color: #00B8FF;
+}
+
+.social-icon-f {
+    margin-right: 7px;
+    font-size: 12px;
+    background-color: #ff9e01;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    width: 30px;
+}
+
+.social-icon-f a {
+    color: #000;
+}
+
+.icon-list {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px;
+}
+
+.icon-list p {
+    margin: 0px;
+}
+
+.section-footer .container .row div:nth-child(4) .list ul li {
+    /* display: inline; */
+    margin-right: 0px;
+}
+
+.footer-logo-paragraph-center .footer-text p {
+    font-family: 'poppins-l';
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+}
+
+.footer-logo-paragraph-center .footer-text {
+    width: 200px;
+}
+
+.section-footer .container .row div:nth-child(3) .list ul li a {
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+p.tagline {
+    text-align: center;
+    font-family: 'poppins-r';
+    padding: 1% 0px;
+    color: #fff;
+    margin-bottom: 0 !important;
+    font-size: 15px;
+    margin-top: 3%;
+}
+
+p.tagline span a {
+    font-family: 'poppins-b';
+    color: #fff !important;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+p.tagline span a:focus,
+p.tagline span a:hover {
+    font-family: 'poppins-l' !important;
+}
+
+.color01:hover {
+    color: #4a22d9;
+}
+
+/* End Footer Section */
+
+
+#width {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+/* About Page Start */
+
+/* About Page Header Section Start */
+
+
+/* About Page Mobile Navbar Start */
+
+
+
+
+#about nav ul li a {
+    color: #000;
+}
+
+#about nav ul li a:hover {
+    color: #000;
+}
+
+#about nav ul li a:hover {
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+#about .mobile-pages ul li a {
+    color: #000;
+}
+
+.mobile-pages ul li a:hover {
+    color: #939393;
+}
+
+#about .part-3 .social-icons a i {
+    background: #000;
+}
+
+
+
+
+/* About Page Mobile Nav bar End */
+
+/* About Page Dekstop Nav bar Start */
+
+#about .search-bar form input[type="text"] {
+    color: #666;
+}
+
+
+
+#about .search-bar form .search-icon {
+    color: #000;
+}
+
+#about .search-bar {
+
+    border: 3px solid #000;
+}
+
+#about .social-icons a i::before {
+    color: #fff;
+}
+
+
+/* About Page Dekstop Nav bar End */
+
+
+
+/* About Header Start */
+
+
+#about-header {
+    height: 700px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.about-header-part-1 {
+    text-align: center;
+}
+
+.about-header-part-1 h1 {
+    color: #000;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.about-header-part-1 h5 {
+    color: #000;
+    font-family: 'poppins-m';
+    font-size: 20px;
+}
+
+.car-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.about-header-part-2 .car-1 {
+    width: 100%;
+    height: 400px;
+}
+
+
+.about-header-part-1 {
+    margin-bottom: 4%;
+}
+
+.about-header-part-2 {
+    margin-bottom: -5.5%;
+}
+
+
+/* About Header End */
+
+/* About Page Dream Car Section Start */
+
+section#dream-car-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/1x/1x/dream-car-about.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dream-Car Section End */
+
+
+
+
+/* Lux-Homes Header Start */
+
+
+#lux-homes-header {
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(./images/1x/1x/lux-homes-header-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.lux-homes-header-part-1 {
+    text-align: center;
+}
+
+.lux-homes-header-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.lux-homes-header-part-1 h5,
+.jet-header-part-1 h5 {
+    color: #fff;
+    font-family: 'poppins-m';
+    font-size: 20px;
+}
+
+.car-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.about-header-part-2 .car-1 {
+    width: 100%;
+    height: 400px;
+}
+
+
+.about-header-part-1 {
+    margin-bottom: 4%;
+}
+
+.about-header-part-2 {
+    margin-bottom: -5.5%;
+}
+
+/* OUR LOCATION Section Start */
+
+section#our-location {
+    margin: 5% 0;
+    padding: 4% 0;
+}
+
+.our-location-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.our-location-part-1 h2 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 40px;
+}
+
+.our-location-part-1 {
+    text-align: center;
+}
+
+.our-location-part-1 a button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.our-location-part-1 a button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+section#our-location {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/1x/1x/bg-our-location.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-location-part-1 .map {
+    width: 40%;
+    margin: 25px auto;
+    height: 40%;
+}
+
+/* OUR LOCATION Section End */
+
+.lux .exotic-part-1 h1,
+.jet .exotic-part-1 h1 {
+    padding: 5% 0 1% 0;
+}
+
+/* Lux-Dream-Car Section Start */
+
+section#lux-dream-car {
+    margin: 5% 0;
+    padding: 5% 0;
+}
+
+.lux-dream-car-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 70px;
+}
+
+
+.lux-dream-car-part-1 h1,
+.lux-dream-car-part-1 a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lux-dream-car-part-1 {
+    text-align: center;
+}
+
+.lux-dream-car-part-1 a button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.lux-dream-car-part-1 a button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+section#lux-dream-car {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/1x/1x/lux-dream-car-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Lux-Dream-Car Section End */
+
+/* LUX_HOMES Header End */
+
+/* Privat-jet Header Start */
+
+#jet-header {
+    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(./images/1x/1x/plane-header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.jet-header-part-1 {
+    text-align: center;
+}
+
+.jet-header-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.car-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.jet-header-part-2 .car-1 {
+    width: 100%;
+    height: 300px;
+}
+
+.jet-header-part-1 {
+    margin-bottom: 5.5%;
+}
+
+.jet-header-part-2 {
+    margin-bottom: -5.5%;
+}
+
+
+
+/* Contact Header Start */
+
+#contact-header {
+    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(./images/1x/1x/contact-header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-header-part-1 {
+    text-align: center;
+}
+
+.contact-header-part-1 h1 {
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+section#contact-header .contact-header-part-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-header-part-2 form .row div input {
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    margin: 6px 0;
+    padding: 10px;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.contact-header-part-2 form .row div textarea {
+    width: 100%;
+    height: -webkit-fill-available;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    margin: 6px 0;
+    padding: 10px;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+::-ms-input-placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-family: 'poppins-sb';
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.search-bar form input[type="text"]::placeholder{
+    color: #999999;
+    font-size: 14px;
+}
+
+.search-bar form input[type="text"]::-ms-input-placeholder{
+    color: #999999;
+    font-size: 14px;
+}
+
+section#contact-header .contact-header-part-2 form {
+    text-align: center;
+}
+
+section#contact-header .contact-header-part-2 form .row .col-lg-6.col-md-6.col-sm-12 {
+    padding: 0 5px;
+}
+
+
+section#contact-header .contact-header-part-2 form button {
+    margin-top: 2%;
+}
+
+.contact-header-part-1 {
+    padding: 5% 0;
+}
+
+.contact-footer .section-footer {
+    margin-top: 0;
+}
+
+
+/* Map Section */
+
+#map {
+    height: 600px;
+    background: url(./images/1x/1x/map-contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Map Section */
+
+/* Address Section */
+
+#address {
+    height: 700px;
+    background: url(./images/1x/1x/address-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-1,
+.part-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.part-1 .box,
+.part-2 .box {
+    border: 3px solid #fff;
+    width: 400px;
+    height: 250px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box h2 {
+    font-family: 'agatho-b-caps';
+    font-size: 45px;
+    color: #fff;
+}
+
+.box a.icon {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box a.icon i {
+    color: #231F20;
+}
+
+.box a.number,
+.box a.location,
+.box h4 {
+    font-family: 'poppins-r';
+    color: #fff;
+    font-size: 25px;
+}
+
+.box p {
+    font-family: 'poppins-r';
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Address Section */
+
+/* Posh Page */
+
+#posh-header {
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(./images/1x/1x/about-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posh-header-part-1{
+    text-align: center;
+}
+
+.posh-header-part-1 h1{
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+/* Posh Page */
+
+/* Imports Section */
+
+#imports {
+    padding: 4% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imports-part-1{
+    text-align: center;
+}
+
+.imports-part-1 h1{
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.imports-part-1 p{
+    color: #fff;
+    font-family: 'poppins-r';
+    font-size: 16px;
+    padding: 0 7%;
+}
+
+.posh .section-footer {
+    margin-top: 0;
+}
+
+/* Imports Section */
+
+/* TEAM Section */
+
+#team {
+    padding: 4% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    background: url(./images/1x/1x/address-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-part-1, .team-part-2, .team-part-3{
+    text-align: center;
+}
+
+.team-part-1 h1{
+    color: #fff;
+    font-family: 'agatho-b-caps';
+    font-size: 60px;
+}
+
+.team-part-2 .member {
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+}
+
+.team-part-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-part-3 button{
+    margin: 3% 0;
+}
+
+
+
+
+/* TEAM Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile-Screen */
+
+@media(max-width: 576px) {
+
+    /* Nav bar Start */
+
+
+    #width {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .mobile-pages {
+        display: block;
+    }
+
+    .nav-dekstop {
+        display: none;
+    }
+
+    .mobile-pages {
+        margin-left: 100%;
+        transition: all 0.6s;
+    }
+
+    i#open,
+    i#close {
+        color: #fff;
+        font-size: 30px;
+    }
+
+
+    #about i#open,
+    #about i#close {
+        color: #000;
+    }
+
+
+    #close {
+        display: none;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    #open {
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    .logo {
+        width: 32%;
+        padding: 5px;
+    }
+
+    .mobile-pages ul li {
+        text-align: center;
+    }
+
+    .mobile-pages {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -90px;
+        background-color: #000000c2;
+        position: fixed;
+        top: 90px;
+        z-index: 3;
+    }
+
+    .mobile-pages ul li {
+        margin: 20px 0;
+    }
+
+    /* .container .row div {
+        overflow: hidden;
+    } */
+
+    div#custom .row .col-12 {
+        padding: 0px;
+    }
+
+    #custom-nav {
+        padding: 0 15px;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .dekstop {
+        display: none;
+    }
+
+    .part-3 .social-icons {
+        justify-content: center;
+    }
+
+
+    /* Nav bar End */
+
+
+    /* Home Header Start */
+
+
+    #home-header {
+        height: 600px;
+    }
+
+    #jet-header {
+        height: 450px;
+    }
+
+    .home-header-part-1 h1,
+    .about-header-part-1 h1,
+    .lux-homes-header-part-1 h1,
+    .jet-header-part-1 h1,
+    .contact-header-part-1 h1, 
+    .posh-header-part-1 h1 {
+        font-size: 35px;
+    }
+
+    .about-header-part-1 h5,
+    .lux-homes-header-part-1 h5,
+    .jet-header-part-1 h5 {
+        font-size: 15px;
+    }
+
+    .home-header-part-1 a button,
+    .vehicles-part-1 a button,
+    .luxury-part-1 a button,
+    section#contact-header .contact-header-part-2 form button,
+    .contact-header-part-2 form .row div textarea,
+    .contact-header-part-2 form .row div input, .team-part-3 button {
+        font-size: 12px;
+    }
+
+    ::-ms-input-placeholder {
+        font-size: 12px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+    .home-header-part-1 {
+        margin-bottom: 25%;
+    }
+
+    .jet-header-part-2 .car-1 {
+        height: auto;
+    }
+
+    .jet-header-part-1 {
+        margin-bottom: 25%;
+    }
+
+    .home-header-part-2 .car-1 {
+        height: 150px;
+    }
+
+
+    /* Home Header End */
+
+    /* Vehicles Section Start */
+
+
+    .vehicles-part-1 h1 {
+        font-size: 32px;
+    }
+
+    .vehicles-part-1 h1,
+    .vehicles-part-1 p,
+    .vehicles-part-1 a button,
+    .vehicles-part-1 ul {
+        margin: 10px 0;
+    }
+
+    .vehicles-part-1 a button {
+        margin-top: 5%;
+    }
+
+    .vehicles-part-1 p {
+        margin-bottom: 5%;
+        font-size: 14px;
+        padding: 0px 3%;
+    }
+
+    ul.logos li {
+        height: 80px;
+        width: 80px;
+        margin: 8px 8px;
+    }
+
+    ul.logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+
+    /* Vehicles Section End */
+
+
+    /* Exotic Section Start */
+
+    .exotic-part-1 h1, .imports-part-1 h1, .team-part-1 h1 {
+        font-size: 32px;
+    }
+
+    .card .content a button {
+        font-size: 12px;
+    }
+
+    .exotic-part-1 a button {
+        font-size: 12px;
+    }
+
+    /* Exotic Section End */
+
+    /* Luxury Section Start */
+
+    .luxury-part-1 h1 {
+        font-size: 32px;
+        padding: 0 5%;
+    }
+
+    .black .frame h1 {
+        font-size: 30px;
+    }
+
+    .black .frame p {
+        font-size: 12px;
+        padding: 0 30px;
+    }
+
+    .black {
+        padding: 8% 0;
+    }
+
+    .luxury-part-1 .black .frame {
+        width: 260px;
+    }
+
+    .black {
+        border-top: 30px solid #000;
+    }
+
+    .luxury-part-1 .car {
+        width: 90%;
+    }
+
+    /* Luxury Section End */
+
+    /* Los-Angeles Section Start */
+
+    .los-angeles-part-1 h1,
+    .our-location-part-1 h1 {
+        font-size: 32px;
+    }
+
+    .los-angeles-part-1 h2,
+    .our-location-part-1 h2 {
+        font-size: 25px;
+    }
+
+    .los-angeles-part-1 a button,
+    .our-location-part-1 a button {
+        font-size: 12px;
+    }
+
+    .los-angeles-part-1 .map,
+    .our-location-part-1 .map {
+        width: 70%;
+        height: 70%;
+        margin: 20px auto;
+    }
+
+    /* Los-Angeles Section End */
+
+    /* Dream-Car Section Start */
+
+    .dream-car-part-1 h1 {
+        font-size: 40px;
+    }
+
+    .lux-dream-car-part-1 h1 {
+        font-size: 33px;
+    }
+
+    .dream-car-part-1 p {
+        font-size: 12px;
+        width: 85%;
+    }
+
+    .dream-car-part-1 a button,
+    .lux-dream-car-part-1 a button {
+        font-size: 12px;
+    }
+
+    /* Dream-Car Section End */
+
+    /* Door Start */
+
+    .door-part-2 h1 {
+        font-size: 35px;
+    }
+
+    .door-part-2 p {
+        font-size: 12px;
+        width: 95%;
+    }
+
+    .door-part-2 a button {
+        font-size: 12px;
+    }
+
+    .door-part-2 p,
+    .door-part-2 h1,
+    .door-part-2 a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .door-part-2 {
+        padding: 7% 0;
+    }
+
+    .door-part-1 {
+        padding-top: 35%;
+        margin-bottom: -10%;
+    }
+
+    section#door .container .row .circle {
+        position: static;
+    }
+
+    .door-part-1 {
+        position: static;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    /* Door End */
+
+    /* Clients Start */
+
+    .clients-part-1 h1 {
+        font-size: 32px;
+    }
+
+    .clients-part-3 a button {
+        font-size: 12px;
+    }
+
+    .clients-part-2 .review {
+        border: 10px solid #000;
+        margin-top: 12%;
+        margin-bottom: 12%;
+    }
+
+    .review .girl-image {
+        margin-top: -18%;
+        margin-right: 3%;
+    }
+
+    .review .car-image {
+        margin-bottom: -16%;
+        margin-left: -12%;
+    }
+
+    .review .content h2 {
+        font-size: 20px;
+    }
+
+    .review .content h6 {
+        font-size: 12px;
+    }
+
+    .review .content h3 {
+        font-size: 30px;
+    }
+
+    .review .content p {
+        font-size: 12px;
+    }
+
+    .clients-part-2 .review .content {
+        width: 90%;
+    }
+
+    .clients-part-2 .review {
+        width: 90%;
+    }
+
+    .review .girl-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .review .car-image {
+        height: 120px;
+        width: 250px;
+    }
+
+    a.arrow-right,
+    a.arrow-left {
+        margin: 0 2%;
+        font-size: 20px;
+    }
+
+    /* Client End */
+
+
+
+    .heading h5 {
+        font-size: 18px;
+    }
+
+    .list ul li a {
+        font-size: 12px;
+    }
+
+    .footer-logo-paragraph-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-footer .container .row div {
+        text-align: center;
+    }
+
+    .section-footer .container .row div .list ul li a {
+        margin: 0 auto;
+    }
+
+    .section-footer .container .row div:nth-child(4) .list ul li {
+        display: flex;
+    }
+
+    p.tagline {
+        font-size: 12px;
+    }
+
+    .section-footer .container .row div:nth-child(3) .list ul li a {
+        margin-left: 0px;
+    }
+
+    /* End Footer Section */
+
+
+    #about-header {
+        height: 380px;
+    }
+
+    #lux-homes-header, #posh-header {
+        height: 450px;
+    }
+
+    #imports{
+        height: auto;
+    }
+
+    .about-header-part-2 .car-1 {
+        height: 160px;
+    }
+
+    .jet .luxury-part-1 .black .frame {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .jet .black .frame h1 {
+        font-size: 35px;
+    }
+
+    .contact-header-part-2 form .row div textarea {
+        height: 160px;
+    }
+
+    #contact-header {
+        height: 700px;
+    }
+
+    .contact-header-part-1 {
+        padding: 5% 0;
+    }
+
+    /* Map Section */
+
+    #map {
+        height: 500px;
+    }
+
+    /* Address Section */
+
+    #address {
+        height: auto;
+    }
+
+    .part-1, .part-2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part-1 .box,
+    .part-2 .box {
+        width: 275px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .box h2 {
+        font-size: 30px;
+    }
+
+    .box a.icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    .box a.number,
+    .box a.location,
+    .box h4 {
+        font-size: 16px;
+    }
+
+    .box p {
+        font-size: 12px;
+    }
+
+    /* Address Section */
+
+    .imports-part-1 p{
+        font-size: 12px;
+        padding: 0 4%;
+    }
+
+    .team-part-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .team-part-2 .member {
+        width: 225px;
+        height: 225px;
+        margin: 10px;
+    }
+
+    .team-part-2{
+        padding: 4% 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet-Screen */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Nav bar Start */
+
+    nav ul li a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    nav.nav-dekstop .container .row .col-lg-8.col-md-8 {
+        padding: 0px;
+    }
+
+    .logo {
+        width: 15%;
+        padding: 8px;
+    }
+
+    .part-3 .social-icons a i {
+        height: 20px;
+        width: 20px;
+        font-size: 9px;
+        margin: 0 2px;
+    }
+
+    .search-bar form input[type="text"] {
+        padding: 0px 8px;
+        font-size: 12px;
+    }
+
+    .search-bar {
+        margin-bottom: 5px;
+    }
+
+    .search-bar form .search-icon {
+        padding: 0px 8px;
+    }
+
+    .about-header-part-1 h5,
+    .lux-homes-header-part-1 h5,
+    .jet-header-part-1 h5 {
+        font-size: 17px;
+    }
+
+
+    /* Nav bar End */
+
+
+    /* Home Header Start */
+
+
+    .home-header-part-1 h1,
+    .about-header-part-1 h1,
+    .lux-homes-header-part-1 h1,
+    .jet-header-part-1 h1,
+    .contact-header-part-1 h1,
+    .posh-header-part-1 h1,
+    .imports-part-1 h1,
+    .team-part-1 h1 {
+        font-size: 45px;
+    }
+
+    .home-header-part-1 a button,
+    .vehicles-part-1 a button,
+    .luxury-part-1 a button,
+    section#contact-header .contact-header-part-2 form button,
+    .contact-header-part-2 form .row div textarea,
+    .contact-header-part-2 form .row div input, .team-part-3 button {
+        font-size: 13px;
+    }
+
+    ::-ms-input-placeholder {
+        font-size: 13px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    #home-header {
+        height: 600px;
+    }
+
+    #jet-header {
+        height: 550px;
+    }
+
+    .jet-header-part-2 .car-1 {
+        height: auto;
+    }
+
+    .home-header-part-2 .car-1 {
+        height: 260px;
+    }
+
+    .home-header-part-1 {
+        margin-bottom: 4%;
+    }
+
+    .home-header-part-2 {
+        margin-bottom: -8%;
+    }
+
+    /* Home Header End */
+
+    /* Vehicles Section Start */
+
+
+    .vehicles-part-1 h1 {
+        font-size: 42px;
+    }
+
+    .vehicles-part-1 h1,
+    .vehicles-part-1 p,
+    .vehicles-part-1 a button,
+    .vehicles-part-1 ul {
+        margin: 10px 0;
+    }
+
+    .vehicles-part-1 a button {
+        margin-top: 3%;
+    }
+
+    .vehicles-part-1 p {
+        margin-bottom: 3%;
+        font-size: 16px;
+        padding: 0px 4%;
+    }
+
+    ul.logos li {
+        height: 85px;
+        width: 85px;
+        margin: 8px 8px;
+    }
+
+
+    /* Vehicles Section End */
+
+
+    /* Exotic Section Start */
+
+    .exotic-part-1 h1 {
+        font-size: 42px;
+    }
+
+    .card .content a button {
+        font-size: 13px;
+    }
+
+    .exotic-part-1 a button {
+        font-size: 13px;
+    }
+
+    /* Exotic Section End */
+
+    /* Luxury Section Start */
+
+    .luxury-part-1 h1 {
+        font-size: 42px;
+    }
+
+    .black .frame h1 {
+        font-size: 36px;
+    }
+
+    .black .frame p {
+        font-size: 13px;
+        padding: 0 20px;
+    }
+
+    .luxury-part-1 .black .frame {
+        width: 280px;
+    }
+
+    /* Luxury Section End */
+
+    /* Los-Angeles Section Start */
+
+    .los-angeles-part-1 h1,
+    .our-location-part-1 h1 {
+        font-size: 42px;
+    }
+
+    .los-angeles-part-1 h2,
+    .our-location-part-1 h2 {
+        font-size: 32px;
+    }
+
+    .los-angeles-part-1 a button,
+    .our-location-part-1 a button {
+        font-size: 13px;
+    }
+
+    /* Los-Angeles Section End */
+
+    /* Dream-Car Section Start */
+
+    .dream-car-part-1 h1,
+    .lux-dream-car-part-1 h1 {
+        font-size: 50px;
+    }
+
+    .dream-car-part-1 p {
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .dream-car-part-1 a button,
+    .lux-dream-car-part-1 a button {
+        font-size: 13px;
+    }
+
+    /* Dream-Car Section End */
+
+    /* Door Start */
+
+    .door-part-2 h1 {
+        font-size: 35px;
+    }
+
+    .door-part-2 p {
+        font-size: 13px;
+        width: 95%;
+    }
+
+    .door-part-2 a button {
+        font-size: 13px;
+    }
+
+    .door-part-2 p,
+    .door-part-2 h1,
+    .door-part-2 a {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .door-part-2 {
+        padding-bottom: 4%;
+    }
+
+    section#door .container .row .circle {
+        background-size: contain;
+    }
+
+    /* Door End */
+
+    /* Clients Start */
+
+    .clients-part-1 h1 {
+        font-size: 42px;
+    }
+
+    .clients-part-3 a button {
+        font-size: 13px;
+    }
+
+    .clients-part-2 .review {
+        border: 10px solid #000;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .review .girl-image {
+        margin-top: -14%;
+        margin-right: 3%;
+    }
+
+    .review .car-image {
+        margin-bottom: -15%;
+        margin-left: -12%;
+    }
+
+    .review .content h2 {
+        font-size: 25px;
+    }
+
+    .review .content h6 {
+        font-size: 13px;
+    }
+
+    .review .content h3 {
+        font-size: 35px;
+    }
+
+    .review .content p {
+        font-size: 13px;
+    }
+
+    .clients-part-2 .review .content {
+        width: 85%;
+    }
+
+    .clients-part-2 .review {
+        width: 70%;
+    }
+
+    .review .girl-image {
+        height: 110px;
+        width: 110px;
+    }
+
+    .review .car-image {
+        height: 150px;
+        width: 290px;
+    }
+
+    /* Client End */
+
+
+    .heading h5 {
+        font-size: 20px;
+    }
+
+    .list ul li a {
+        font-size: 12px;
+    }
+
+    .footer-logo-paragraph-center .footer-text p {
+        font-size: 9px;
+        padding: 0%;
+    }
+
+    .footer-logo-paragraph-center .footer-logo {
+        height: 100px;
+        width: 130px;
+    }
+
+    .footer-logo-paragraph-center .footer-text {
+        width: 130px;
+    }
+
+    p.tagline {
+        font-size: 13px;
+    }
+
+    /* End Footer Section */
+
+    #about-header {
+        height: 500px;
+    }
+
+    #lux-homes-header, #posh-header {
+        height: 550px;
+    }
+
+    #imports{
+        height: auto;
+    }
+
+    .about-header-part-2 .car-1 {
+        height: 275px;
+    }
+
+    nav.nav-dekstop .part-3 {
+        width: 100%;
+    }
+
+    #about .search-bar {
+
+        border: 2px solid #000;
+    }
+
+    .part-3 .social-icons {
+        margin-bottom: 3px;
+    }
+
+    nav.nav-dekstop {
+        margin-top: -16px;
+    }
+
+    nav.nav-dekstop {
+        padding-top: 5px;
+    }
+
+    .jet .luxury-part-1 .black .frame {
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .jet .black .frame h1 {
+        font-size: 40px;
+    }
+
+    #contact-header {
+        height: 600px;
+    }
+
+    .contact-header-part-1 {
+        padding: 5% 0;
+    }
+
+    /* Map Section */
+
+    #map {
+        height: 500px;
+    }
+
+
+    /* Address Section */
+
+    #address {
+        height: 640px;
+    }
+
+    .part-1 .box,
+    .part-2 .box {
+        width: 350px;
+        height: 230px;
+        margin: 10px;
+    }
+
+    .box h2 {
+        font-size: 35px;
+    }
+
+    .box a.icon {
+        height: 32px;
+        width: 32px;
+    }
+
+    .box a.number,
+    .box a.location,
+    .box h4 {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 13px;
+    }
+
+    /* Address Section */
+
+    .imports-part-1 p{
+        font-size: 13px;
+        padding: 0 6%;
+    }
+
+    .team-part-2 .member {
+        width: 180px;
+        height: 180px;
+        margin: 16px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Laptop-Screen */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* Nav bar Start */
+
+    .part-3 .social-icons a i {
+        height: 26px;
+        width: 26px;
+        font-size: 12px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        margin: 0 9px;
+    }
+
+    .search-bar form input[type="text"] {
+        font-size: 12px;
+    }
+
+    .search-bar form .search-icon {
+        width: 12%;
+        padding: 4px 10px;
+    }
+
+    .part-3 .social-icons {
+        margin-bottom: 4px;
+    }
+
+    /* Nav bar End */
+
+    /* Home Header Start */
+
+    #home-header {
+        height: 750px;
+    }
+
+    .home-header-part-2 {
+        margin-bottom: -7.5%;
+    }
+
+    /* Home Header End */
+
+    /* Vehicles Section Start */
+
+    .vehicles-part-1 h1 {
+        font-size: 52px;
+    }
+
+    .vehicles-part-1 h1,
+    .vehicles-part-1 p,
+    .vehicles-part-1 a button,
+    .vehicles-part-1 ul {
+        margin: 10px 0;
+    }
+
+    .vehicles-part-1 a button {
+        margin-top: 4%;
+    }
+
+    .vehicles-part-1 p {
+        margin-bottom: 4%;
+        font-size: 20px;
+        padding: 0px 8%;
+    }
+
+    ul.logos li {
+        height: 110px;
+        width: 110px;
+        margin: 10px 12px;
+    }
+
+
+    /* Vehicles Section End */
+
+
+    /* Exotic Section Start */
+
+    .exotic-part-1 h1 {
+        font-size: 52px;
+    }
+
+    /* Exotic Section End */
+
+    /* Luxury Section Start */
+
+    .luxury-part-1 h1 {
+        font-size: 52px;
+    }
+
+    .black .frame h1 {
+        font-size: 42px;
+    }
+
+    /* Luxury Section End */
+
+    /* Los-Angeles Section Start */
+
+    .los-angeles-part-1 h1,
+    .our-location-part-1 h1 {
+        font-size: 52px;
+    }
+
+    .los-angeles-part-1 h2,
+    .our-location-part-1 h2 {
+        font-size: 35px;
+    }
+
+    /* Los-Angeles Section End */
+
+    /* Door Start */
+
+    .door-part-2 h1 {
+        font-size: 55px;
+        line-height: 0.9;
+    }
+
+    .door-part-2 p {
+        width: 95%;
+    }
+
+    .door-part-2 p,
+    .door-part-2 h1,
+    .door-part-2 a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .door-part-2 {
+        padding: 4% 0;
+    }
+
+    /* Door End */
+
+    /* Clients Start */
+
+    .clients-part-1 h1 {
+        font-size: 52px;
+    }
+
+    .clients-part-2 .review {
+        border: 13px solid #000;
+        margin-top: 6%;
+        margin-bottom: 7%;
+    }
+
+    .review .girl-image {
+        margin-top: -11%;
+        margin-right: 3%;
+    }
+
+    .review .car-image {
+        margin-bottom: -12%;
+        margin-left: -12%;
+    }
+
+    .clients-part-2 .review .content {
+        width: 85%;
+    }
+
+    .clients-part-2 .review {
+        width: 70%;
+    }
+
+    .review .girl-image {
+        height: 125px;
+        width: 125px;
+    }
+
+    .review .car-image {
+        height: 160px;
+        width: 320px;
+    }
+
+    /* Client End */
+
+    nav.nav-dekstop {
+        margin-top: -15px;
+    }
+
+    .jet .luxury-part-1 .black .frame {
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .jet .black .frame h1 {
+        font-size: 39px;
+    }
+
+    .team-part-2 .member {
+        width: 220px;
+        height: 220px;
+        margin: 25px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dekstop-Screen */
+
+@media (min-width: 1201px) and (max-width: 2560px) {
+
+    /* Door Start */
+
+    .door-part-2 h1 {
+        line-height: 0.9;
+    }
+
+    .door-part-2 {
+        padding: 10% 0;
+    }
+
+    /* Door End */
+
+
+}
+
+/* 4k-Screen */
+
+/* @media (min-width: 1600px) and (max-width: 2560px) {
+
+} */
+
+/* All-Mobile-Screen */
+
+@media(max-width: 320px) {
+
+    /* Home Header Start */
+
+    .home-header-part-2 {
+        margin-bottom: -15%;
+    }
+
+    /* Home Header End */
+
+    /* Clients Start */
+
+    a.arrow-right,
+    a.arrow-left {
+        margin: 0 1%;
+        font-size: 17px;
+    }
+
+    .clients-part-2 .review {
+        width: 75%;
+    }
+
+    .review .car-image {
+        height: 100px;
+        width: 200px;
+    }
+
+    .review .girl-image {
+        height: 85px;
+        width: 85px;
+    }
+
+    .review .car-image {
+        margin-bottom: -20%;
+    }
+
+    .review .girl-image {
+        margin-top: -22%;
+    }
+
+    /* Client End */
+
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+
+    /* Home Header Start */
+
+    .home-header-part-2 {
+        margin-bottom: -12%;
+    }
+
+    /* Home Header End */
+
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+
+    /* Home Header Start */
+
+    .home-header-part-2 {
+        margin-bottom: -10%;
+    }
+
+    /* Home Header End */
+
+}
